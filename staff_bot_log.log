@@ -1,0 +1,339 @@
+2025-02-09 13:47:13,339, INFO, BEGIN (implicit)
+2025-02-09 13:47:13,341, INFO, PRAGMA main.table_info("banner")
+2025-02-09 13:47:13,342, INFO, [raw sql] ()
+2025-02-09 13:47:13,348, INFO, PRAGMA main.table_info("category")
+2025-02-09 13:47:13,349, INFO, [raw sql] ()
+2025-02-09 13:47:13,353, INFO, PRAGMA main.table_info("staff")
+2025-02-09 13:47:13,353, INFO, [raw sql] ()
+2025-02-09 13:47:13,357, INFO, PRAGMA main.table_info("user")
+2025-02-09 13:47:13,357, INFO, [raw sql] ()
+2025-02-09 13:47:13,362, INFO, COMMIT
+2025-02-09 13:47:13,370, INFO, BEGIN (implicit)
+2025-02-09 13:47:13,406, INFO, SELECT category.id, category.name, category.created, category.updated 
+FROM category
+2025-02-09 13:47:13,407, INFO, [generated in 0.00080s] ()
+2025-02-09 13:47:13,415, INFO, SELECT banner.id, banner.name, banner.image, banner.description, banner.created, banner.updated 
+FROM banner
+2025-02-09 13:47:13,416, INFO, [generated in 0.00075s] ()
+2025-02-09 13:47:13,420, INFO, ROLLBACK
+2025-02-09 13:47:13,422, INFO, Start polling
+2025-02-09 13:47:13,569, INFO, Run polling for bot @StafffffffffffffBot id=8124798829 - 'StaffBot'
+2025-02-09 13:47:20,635, INFO, BEGIN (implicit)
+2025-02-09 13:47:20,639, INFO, SELECT banner.id, banner.name, banner.image, banner.description, banner.created, banner.updated 
+FROM banner 
+WHERE banner.name = ?
+2025-02-09 13:47:20,640, INFO, [generated in 0.00081s] ('main',)
+2025-02-09 13:47:21,156, INFO, ROLLBACK
+2025-02-09 13:47:21,159, INFO, Update id=348387771 is handled. Duration 532 ms by bot id=8124798829
+2025-02-09 13:47:27,556, INFO, BEGIN (implicit)
+2025-02-09 13:47:27,557, INFO, SELECT banner.id, banner.name, banner.image, banner.description, banner.created, banner.updated 
+FROM banner 
+WHERE banner.name = ?
+2025-02-09 13:47:27,558, INFO, [cached since 6.919s ago] ('choose',)
+2025-02-09 13:47:27,564, INFO, SELECT category.id, category.name, category.created, category.updated 
+FROM category
+2025-02-09 13:47:27,565, INFO, [cached since 14.16s ago] ()
+2025-02-09 13:47:28,014, INFO, ROLLBACK
+2025-02-09 13:47:28,017, INFO, Update id=348387772 is handled. Duration 476 ms by bot id=8124798829
+2025-02-09 13:47:29,025, INFO, BEGIN (implicit)
+2025-02-09 13:47:29,032, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:29,033, INFO, [generated in 0.00116s] (1,)
+2025-02-09 13:47:29,376, INFO, ROLLBACK
+2025-02-09 13:47:29,378, INFO, Update id=348387773 is handled. Duration 367 ms by bot id=8124798829
+2025-02-09 13:47:34,355, INFO, BEGIN (implicit)
+2025-02-09 13:47:34,357, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:34,357, INFO, [cached since 5.325s ago] (1,)
+2025-02-09 13:47:34,806, INFO, ROLLBACK
+2025-02-09 13:47:34,809, INFO, Update id=348387774 is handled. Duration 467 ms by bot id=8124798829
+2025-02-09 13:47:36,404, INFO, BEGIN (implicit)
+2025-02-09 13:47:36,406, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:36,406, INFO, [cached since 7.374s ago] (1,)
+2025-02-09 13:47:36,720, INFO, ROLLBACK
+2025-02-09 13:47:36,723, INFO, Update id=348387775 is handled. Duration 332 ms by bot id=8124798829
+2025-02-09 13:47:39,221, INFO, BEGIN (implicit)
+2025-02-09 13:47:39,222, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:39,223, INFO, [cached since 10.19s ago] (1,)
+2025-02-09 13:47:39,668, INFO, ROLLBACK
+2025-02-09 13:47:39,671, INFO, Update id=348387776 is handled. Duration 464 ms by bot id=8124798829
+2025-02-09 13:47:42,444, INFO, BEGIN (implicit)
+2025-02-09 13:47:42,445, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:42,446, INFO, [cached since 13.41s ago] (2,)
+2025-02-09 13:47:42,452, INFO, ROLLBACK
+2025-02-09 13:47:42,455, INFO, Update id=348387777 is not handled. Duration 24 ms by bot id=8124798829
+2025-02-09 13:47:42,456, ERROR, Cause exception while process update id=348387777 by bot id=8124798829
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\middlewares\db.py", line 19, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\user_private.py", line 22, in user_menu
+    media, reply_markup = await get_menu_content(session, level=callback_data.level,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 menu_name=callback_data.menu_name, staff_id=callback_data.staff_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 page=callback_data.page, additional_info=callback_data.additional_info, callback=callback)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\menu_processing.py", line 119, in get_menu_content
+    return await time_employ(session, level, staff_id, page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\menu_processing.py", line 69, in time_employ
+    worker = paginator.get_page()[0]
+             ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-02-09 13:47:48,896, INFO, BEGIN (implicit)
+2025-02-09 13:47:48,897, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:48,898, INFO, [cached since 19.87s ago] (1,)
+2025-02-09 13:47:49,157, INFO, ROLLBACK
+2025-02-09 13:47:49,161, INFO, Update id=348387778 is handled. Duration 278 ms by bot id=8124798829
+2025-02-09 13:47:50,269, INFO, BEGIN (implicit)
+2025-02-09 13:47:50,271, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:50,271, INFO, [cached since 21.24s ago] (1,)
+2025-02-09 13:47:50,516, INFO, ROLLBACK
+2025-02-09 13:47:50,519, INFO, Update id=348387779 is handled. Duration 264 ms by bot id=8124798829
+2025-02-09 13:47:51,382, INFO, BEGIN (implicit)
+2025-02-09 13:47:51,384, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:47:51,384, INFO, [cached since 22.35s ago] (2,)
+2025-02-09 13:47:51,390, INFO, ROLLBACK
+2025-02-09 13:47:51,393, INFO, Update id=348387780 is not handled. Duration 26 ms by bot id=8124798829
+2025-02-09 13:47:51,394, ERROR, Cause exception while process update id=348387780 by bot id=8124798829
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\middlewares\db.py", line 19, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\user_private.py", line 22, in user_menu
+    media, reply_markup = await get_menu_content(session, level=callback_data.level,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 menu_name=callback_data.menu_name, staff_id=callback_data.staff_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 page=callback_data.page, additional_info=callback_data.additional_info, callback=callback)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\menu_processing.py", line 119, in get_menu_content
+    return await time_employ(session, level, staff_id, page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\menu_processing.py", line 69, in time_employ
+    worker = paginator.get_page()[0]
+             ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-02-09 13:48:23,680, INFO, BEGIN (implicit)
+2025-02-09 13:48:23,681, INFO, SELECT staff.id, staff.name, staff.description, staff.price, staff.image, staff.category_id, staff.created, staff.updated 
+FROM staff 
+WHERE staff.category_id = ?
+2025-02-09 13:48:23,682, INFO, [cached since 54.65s ago] (2,)
+2025-02-09 13:48:23,688, INFO, ROLLBACK
+2025-02-09 13:48:23,691, INFO, Update id=348387781 is not handled. Duration 24 ms by bot id=8124798829
+2025-02-09 13:48:23,692, ERROR, Cause exception while process update id=348387781 by bot id=8124798829
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\middlewares\db.py", line 19, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\user_private.py", line 22, in user_menu
+    media, reply_markup = await get_menu_content(session, level=callback_data.level,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 menu_name=callback_data.menu_name, staff_id=callback_data.staff_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 page=callback_data.page, additional_info=callback_data.additional_info, callback=callback)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\menu_processing.py", line 119, in get_menu_content
+    return await time_employ(session, level, staff_id, page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyPetProjects\StaffBot\handlers\menu_processing.py", line 69, in time_employ
+    worker = paginator.get_page()[0]
+             ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-02-09 13:48:48,131, INFO, Polling stopped
+2025-02-09 13:48:48,397, INFO, Polling stopped for bot @StafffffffffffffBot id=8124798829 - 'StaffBot'
