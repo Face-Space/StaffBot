@@ -27,7 +27,7 @@ dp.include_router(user_private_router)
 
 
 
-async def on_startup(bot):
+async def on_startup():
 
     # run_param = False
     # if run_param:
@@ -37,7 +37,7 @@ async def on_startup(bot):
     print("бот заработал!!!!")
 
 
-async def on_shutdown(bot):
+async def on_shutdown():
     print("бот лёг отдохнуть")
 
 
