@@ -27,7 +27,7 @@ dp.include_router(user_private_router)
 
 
 
-async def on_startup():
+async def on_startup(bot):
 
     # run_param = False
     # if run_param:
